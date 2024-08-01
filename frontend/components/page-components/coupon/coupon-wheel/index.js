@@ -134,6 +134,7 @@ export default function CouponWheel({
   }
 
   const handleWinCoupons = () => {
+    setWinner(null)
     const coupon = RandArray(availableCoupons)
     setWinCoupon({
       coupon_id: coupon.id,
